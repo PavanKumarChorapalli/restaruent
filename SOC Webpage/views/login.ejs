@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm" action="/loginsubmit" method="post">
+      <input type="text" id="username" placeholder="Username" required name="email"><br>
+      <input type="password" id="password" placeholder="Password" required name="password"><br>
+      <button type="submit">Login</button>
+    </form>
+    <p id="response"></p>
+  </div>
+  <div class="background-image"></div>
+
+  <!-- <script src="login.js"></script> -->
+
+  <% if (alertMessage) { %>
+    <script>
+      alert('<%- alertMessage %>');
+    </script>
+  <% } %>
+</body>
+
+</html>

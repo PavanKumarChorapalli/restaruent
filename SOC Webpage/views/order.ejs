@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cards</title>
+    <style>
+        /* Your existing CSS styles */
+        * {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial;
+    background-color:black;
+}
+
+.main {}
+
+.cart{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.cards {
+    width: 20%;
+    display: inline-block;
+    background-color: grey;
+    border-radius: 5px;
+    margin: 40px;
+    box-shadow: 6px 6px 12px white;
+}
+
+.image img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    padding: 5px;
+}
+
+.des {
+    text-align: center;
+    padding: 4px;
+}
+
+button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+buttom:hover {
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 40px;
+}
+    </style>
+</head>
+
+<body>
+    
+    <div class="main">
+        <div class="cards">
+            <!-- Card 1 -->
+            <div class="image">
+                <img
+                    src="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.jpg?w=2000">
+            </div>
+            <div class="title">
+                <h1>Pizza</h1>
+            </div>
+            <div class="des">
+                <h2>Cost:120</h2>
+                <h2><form action="/addedToCart" method="GET"><input type="hidden" name="cost" value="120"><input type="hidden" name="amount" value="<%= totalamount %>"><input type="hidden" name="email" value="<%= useremail %>"><button type="submit" name="item" value="Pizza">addToCart</button></form></h2>
+            </div>
+        </div>
+
+        <!-- Other cards... -->
+        <div class="cards">
+
+            <div class="image">
+                <img
+                    src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80">
+            </div>
+
+            <div class="title">
+                <h1>Burger</h1>
+            </div>
+
+
+            <div class="des">
+                <h2>Cost:100</h2> 
+                <h2><form action="/addedToCart" method="GET"><input type="hidden" name="cost" value="100"><input type="hidden" name="amount" value="<%= totalamount %>"><input type="hidden" name="email" value="<%= useremail %>"><button type="submit" name="item" value="Burger">addToCart</button></form></h2> 
+            </div>
+
+        </div>
+
+        <!-- CARDS-->
+
+        <div class="cards">
+
+            <div class="image">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/8/113158/dbffa477f6ea87fec76c8b3f5578d274.jpg">
+            </div>
+
+            <div class="title">
+                <h1>Sandwitch</h1>
+            </div>
+
+            <div class="des">
+                <h2>Cost:70</h2>
+                <h2><form action="/addedToCart" method="GET"><input type="hidden" name="cost" value="70"><input type="hidden" name="amount" value="<%= totalamount %>"><input type="hidden" name="email" value="<%= useremail %>"><button type="submit" name="item" value="Sandwitch">addToCart</button></form></h2> 
+
+                </div>
+
+        </div>
+
+        <!-- CARDS-->
+
+        <div class="cards">
+
+            <div class="image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/%22Hyderabadi_Dum_Biryani%22.jpg">
+            </div>
+
+            <div class="title">
+                <h1>Biriyani</h1>
+            </div>
+
+            <div class="des">
+                <h2>Cost:200</h2>
+                <h2><form action="/addedToCart" method="GET"><input type="hidden" name="cost" value="200"><input type="hidden" name="amount" value="<%= totalamount %>"><input type="hidden" name="email" value="<%= useremail %>"><button type="submit" name="item" value="Biriyani">addToCart</button></form></h2> 
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="cards">
+
+            <div class="image">
+                <img src="https://wallpaperaccess.com/full/715491.jpg">
+            </div>
+
+            <div class="title">
+                <h1>Chicken Fry</h1>
+            </div>
+
+            <div class="des">
+                <h2>Cost:100</h2>
+                <h2><form action="/addedToCart" method="GET"><input type="hidden" name="cost" value="100"><input type="hidden" name="amount" value="<%= totalamount %>"><input type="hidden" name="email" value="<%= useremail %>"><button type="submit" name="item" value="Chicken Fry">addToCart</button></form></h2> 
+
+            </div>
+
+        </div>
+
+        <!-- CARDS-->
+
+        <div class="cards">
+
+            <div class="image">
+                <img
+                    src="https://balchem.com/human-nutrition-health/wp-content/uploads/sites/2/2021/06/chocolate-icecream_1920px-1000x600.jpg">
+            </div>
+
+            <div class="title">
+                <h1>Ice Cream</h1>
+            </div>
+
+            <div class="des">
+                <h2>Cost:40</h2>
+                <h2><form action="/addedToCart" method="GET"><input type="hidden" name="cost" value="40"><input type="hidden" name="amount" value="<%= totalamount %>"><input type="hidden" name="email" value="<%= useremail %>"><button type="submit" name="item" value="Ice Cream">addToCart</button></form></h2>
+            </div>
+
+        </div>
+
+        <!-- CARDS-->
+
+        <div class="cards">
+
+            <div class="image">
+                <img
+                    src="https://images.pexels.com/photos/158053/fresh-orange-juice-squeezed-refreshing-citrus-158053.jpeg?cs=srgb&dl=pexels-pixabay-158053.jpg&fm=jpg">
+            </div>
+
+            <div class="title">
+                <h1>Juice</h1>
+            </div>
+
+            <div class="des">
+                <h2>Cost:30</h2>
+                <h2><form action="/addedToCart" method="GET"><input type="hidden" name="cost" value="30"><input type="hidden" name="amount" value="<%= totalamount %>"><input type="hidden" name="email" value="<%= useremail %>"><button type="submit" name="item" value="Juice">addToCart</button></form></h2>
+            </div>
+
+        </div>
+
+        <!-- CARDS-->
+
+        <div class="cards">
+
+            <div class="image">
+                <img
+                    src="https://media.istockphoto.com/id/1225230295/photo/close-up-glass-of-refreshing-cola.jpg?s=170667a&w=0&k=20&c=a4TVus-vc6YI8LTv_HwQ_BalFjMrGePbYk48lMoSs0E=">
+            </div>
+
+            <div class="title">
+                <h1>Soft Drink</h1>
+            </div>
+
+            <div class="des">
+                <h2>Cost:40</h2>
+                <h2><form action="/addedToCart" method="GET"><input type="hidden" name="cost" value="40"><input type="hidden" name="amount" value="<%= totalamount %>"><input type="hidden" name="email" value="<%= useremail %>"><button type="submit" name="item" value="Soft drink">addToCart</button></form></h2>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+    <div class="cart">
+        <h1>Shopping Cart</h1>
+        <br>
+        <ul id="cartItems" name="cartItems">
+        </ul>
+        <p>Total Cost: $<span id="totalCost">0</span></p>
+        <button>Order</button>
+    </div>
+
+    <script>
+        function order() {
+            alert("Your order is placed")
+        }
+
+        let cart = [];
+        let totalCost = 0;
+
+        function addToCart(itemName, itemCost) {
+            cart.push({ name: itemName, cost: itemCost });
+            totalCost += itemCost;
+            updateCartDisplay();
+        }
+
+        function updateCartDisplay() {
+            const cartItemsElement = document.getElementById('cartItems');
+            const totalCostElement = document.getElementById('totalCost');
+
+            cartItemsElement.innerHTML = '';
+            cart.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${item.name}: $${item.cost}`;
+                cartItemsElement.appendChild(listItem);
+            });
+
+            totalCostElement.textContent = totalCost;
+        }
+
+    </script>
+</body>
+
+</html>
+

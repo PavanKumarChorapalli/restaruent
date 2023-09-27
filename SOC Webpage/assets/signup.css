@@ -1,0 +1,40 @@
+body {
+  background-color: ;
+  background-image: url("https://i.pinimg.com/originals/a9/c5/0a/a9c50a3d2747fede4ec8c553ebe38506.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #ccc;
+  background-color: ;
+  padding: 20px;
+  text-align: center;
+  color: beige
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+button {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+button {
+  padding: 5px 10px;
+}
+
+h2 {
+  font-size: 40px;
+}

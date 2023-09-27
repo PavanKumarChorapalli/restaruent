@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="foodcss.css">
+    <title> Foodee.com</title>
+
+</head>
+
+<body>
+    <nav>
+        <h1>
+            Foodee
+        </h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/order">Order</a></li>
+            <li><a href="/contact">Contact</a></li>
+
+        </ul>
+        <div class="btn">
+            <a href="/login">
+                <button class="login">Login</button>
+            </a>
+            <a href="/signup">
+                <button>Sign Up</button>
+            </a>
+        </div>
+    </nav>
+    <!-- main page html -->
+    <div class="main-div">
+        <div class="head">
+            <h1>Enjoy Your <br>Delecious Food</h1>
+            <P> Hey, Are you hungry?</P>
+            <a href="/order">
+                <button type="button" onclick="eat()">Order Now</button>
+            </a>
+        </div>
+        <div class="img">
+            <img src="chicken.webp">
+
+        </div>
+    </div>
+    <!--<script>
+        function eat() {
+            alert("Sorry,Temporarly Service Is Not Available")
+        }
+    </script>-->
+    <% if (alertMessage) { %>
+        <script>
+          alert('<%- alertMessage %>');
+        </script>
+    <% } %>
+</body>
+
+</html>
